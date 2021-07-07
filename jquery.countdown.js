@@ -121,6 +121,10 @@
         this._name = pluginName;
         this.init();
     }
+    
+    if($ === undefined) {
+        $ = jQuery;
+    }
 
     $.extend(CountDown.prototype, {
 
